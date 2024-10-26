@@ -1,0 +1,30 @@
+<%-include("partials/header.ejs") %>
+
+<div class="container my-5">
+	<div class="p-5 text-center bg-body-tertiary rounded-3">
+	  <img src="img/logo.png" width="100" height="100" alt="logo" class="bi mt-3 mb-3">
+
+	  <h1 class="text-body-emphasis">BlogLife</h1>
+	  <p class="col-lg-8 mx-auto fs-5 text-muted">
+		BlogLife is an online platform where a user can read blogs to stay updated with the world and also can create the blogs too!.
+	  </p>
+	  <div class="d-inline-flex gap-2 mb-5">
+		<form action="/read-blogs" method="post">
+			<button class="d-inline-flex align-items-center btn btn-dark btn-lg px-4 rounded-pill" type="submit">
+			  Read Blogs
+			  <img src="img/arrow-right.png" class="bi ms-2" width="24" height="24">
+			</button>
+		</form>
+		
+		<button class="btn btn-outline-dark btn-lg px-4 rounded-pill" type="button" value="create">
+		  Create Blog
+		</button>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+<%-include("partials/footer.ejs") %>
+
