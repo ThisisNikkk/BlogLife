@@ -1,0 +1,38 @@
+<%-include("partials/header.ejs")%>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Publish Your Blog Post</h1>
+        <form>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author Name</label>
+                <input type="text" class="form-control" id="author" required>
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" id="category" required>
+                    <option value="">Select a category</option>
+                    <option value="technology">Technology</option>
+                    <option value="lifestyle">Lifestyle</option>
+                    <option value="travel">Travel</option>
+                    <option value="food">Food</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Blog Content</label>
+                <textarea class="form-control" id="content" rows="10" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Featured Image</label>
+                <input type="file" class="form-control" id="image" accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-dark">Publish Blog Post</button>
+        </form>
+    </div>
+
+<%-include("partials/footer.ejs") %>

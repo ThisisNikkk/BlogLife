@@ -17,6 +17,10 @@ app.get("/home",(req,res)=>{
     res.render("index.ejs");
 });
 
+app.post("/create-blogs",(req,res)=>{
+    res.render("create.ejs");
+});
+
 
 app.listen(port,(req,res)=>{
     console.log(`Server is running at ${port}`);
