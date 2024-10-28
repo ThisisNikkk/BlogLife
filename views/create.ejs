@@ -1,20 +1,19 @@
 <%-include("partials/header.ejs")%>
-
 <body>
     <div class="container mt-5">
         <h1 class="mb-4">Publish Your Blog Post</h1>
-        <form>
+        <form action="created-blogs" method="post">
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" required>
+                <input type="text" class="form-control" name="title" required>
             </div>
             <div class="mb-3">
                 <label for="author" class="form-label">Author Name</label>
-                <input type="text" class="form-control" id="author" required>
+                <input type="text" class="form-control" name="author" required>
             </div>
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
-                <select class="form-select" id="category" required>
+                <select class="form-select" name="category" required>
                     <option value="">Select a category</option>
                     <option value="technology">Technology</option>
                     <option value="lifestyle">Lifestyle</option>
@@ -25,11 +24,11 @@
             </div>
             <div class="mb-3">
                 <label for="content" class="form-label">Blog Content</label>
-                <textarea class="form-control" id="content" rows="10" required></textarea>
+                <textarea class="form-control" name="content" rows="10" required></textarea>
             </div>
             <div class="mb-3">
                 <label for="image" class="form-label">Featured Image</label>
-                <input type="file" class="form-control" id="image" accept="image/*">
+                <input type="file" class="form-control" name="image" accept="image/*">
             </div>
             <button type="submit" class="btn btn-dark">Publish Blog Post</button>
         </form>
